@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Tom Tereszko
+Tom Tereszko
+Cloud Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+tom.teresz@outlook.com
 
 Phone
-+1 (213) 352-2795
++48 660-435-816
 
 Birthday
-June 23, 1982
+May 01, 1985
 
 Location
-Sacramento, California, USA
+Cracow, Poland.
 
 # navbar
 
