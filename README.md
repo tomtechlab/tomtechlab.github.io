@@ -136,3 +136,42 @@ Start-Sleep -s 1
 Start-EC2Instance -InstanceId $instanceid | Out-Null
 
 ```
+He-he.
+
+```terraform
+
+#start coding
+
+terraform {
+  required_version = ">= 1.9.0"
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">=3.0.0"
+    }
+  }
+
+  backend "local" {
+    path = "mystate/terraform.tfstate"
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_resource_group" "rg" {
+  location = "westeurope"
+  name     = "terraform-newsg"
+}
+
+
+
+resource "random_string" "container_name" {
+  length  = 25
+  lower   = true
+  upper   = false
+  special = false
+}
+
+```
