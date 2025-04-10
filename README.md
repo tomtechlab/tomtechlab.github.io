@@ -138,7 +138,7 @@ Start-EC2Instance -InstanceId $instanceid | Out-Null
 ```
 He-he.
 
-```terraform
+```hcl
 
 #start coding
 
