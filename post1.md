@@ -1,3 +1,7 @@
+**Welcome to past1 created with Markdown**.** 
+
+If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+
 ```powershell
 
 #REM v0.5
@@ -173,5 +177,38 @@ resource "random_string" "container_name" {
   upper   = false
   special = false
 }
+
+```
+
+```yaml
+
+#start coding
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+  labels:
+     name: mydeployment
+     app: app1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      type: frontend
+  template:
+    metadata:
+      name: my-pod
+      labels:
+        type: frontend
+    spec:
+      containers:
+      - name: my-app  
+        image: tomtechlab/app1-linux-js:v0.1
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
+
+---
 
 ```
